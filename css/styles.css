@@ -190,7 +190,7 @@ img {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .first-section-btn:hover,
@@ -204,13 +204,16 @@ img {
   display: flex;
   gap: 24px;
   
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+  
 }
 .features-list-item {
   width: calc ((100% - 72px) / 4);
   
+}
+.icon {display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 8px; 
 }
 
 .features-title {
@@ -304,9 +307,10 @@ padding: 24px 100px;
 
 
 .social-links{
+  
   display: flex;
   margin-top: 8px;
-  padding: 32px 0
+  
   justify-content: center;
   gap: 24px;
   lex-shrink: 0;
@@ -315,9 +319,15 @@ padding: 24px 100px;
 .social-links-svg:hover{background-color: #404bbf;
 background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.social-net{fill:#f4f4fd}
+.social-net{ 
+  fill:#f4f4fd
+  
+  display: flex;
+  padding: 32px 0
+  justify-content: center; }
 
 .social-links-svg{
+  fill: #f4f4fd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,7 +348,7 @@ background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
 
 .portfolio-list {
- box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ 
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
@@ -351,6 +361,8 @@ background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
  
 }
 .portfolio-list-item:hover .overlay{transform: translateY(0);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .portfolio-section-title {
@@ -440,15 +452,16 @@ align-items: baseline;}
 fill: #f4f4fd;
  background-color: #4D5AE5; }
 
-.social-media-svg:hover{background-color: #31d0aa; 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.social-media-svg:hover {background-color: #31d0aa; 
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
 
  
 .social-media-name{
 font-weight: 500;
 font-size: 16px;
 
-/* line-height: 24px; */ 
+line-height: 24px; 
 line-height: 150%;
 letter-spacing: 0.02em;
 color: #fff;}
